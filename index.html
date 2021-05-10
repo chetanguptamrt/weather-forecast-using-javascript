@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css" >        
+        <title>Weather Forecast</title>
+    </head>
+    <body style="background: url('./img/bg.jpg') no-repeat center center fixed; background-size: cover;" lang="en">
+        
+        <div class="navbar-custom-css p-2">
+            <form id="serachCity" class="form-inline">
+                <input class="form-control mr-0" autofocus type="search" id="search" placeholder="Search City" aria-label="Search">
+                <button class="btn btn-outline-light ml-1" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="content-result" id="content" style="display: none;">
+                <h2 id="result-1"></h2>
+                <label>Today</label><br/>
+                <Label id="result-2"></Label><br>
+                <label><img id="result-3"></label><br>
+
+                <label style="font-weight: bold; font-size: 28px;" id="result-4"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label style="font-size: 24px;" id="result-5"></label><br>
+
+                <label id="result-6"></label><br>
+                <label id="result-7"></label><br>
+                <label style="font-weight: bold;" id="result-8"></label>Created by Chetan Gupta<br>
+
+            </div>
+
+            <div class="content-result" id="content-no" style="display: none;">
+                <h1>City not found</h1>
+            </div>
+
+        </div>
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</html>
